@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(background.jpg);
+}
+p{
+    color: hsl(0, 0%, 100%);
+    font-size: 35px;
+}
+.img{
+    display: none;
+}
+.nav-bar{
+    width: 85%;
+    margin: auto;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-bar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px ;
+    
+}
+.nav-bar ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-bar ul li:hover::after{
+    color: rgb(233, 151, 165);
+    width:100%;
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+.area{
+    display: flex;
+    align-items: center ;
+    flex-direction: column;
+    padding: 5px;
+    color: white;
+}
+.text-box{
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    align-items: center ;
+    flex-direction: column;
+    background: url(5-free-admissions-resources.jpg);
+    background-size: cover;
+    opacity: 50%;
+}
+.namee{
+    font-size: 55px;
+    padding: 5px;
+    color: white;
+}
+.nameee{
+    font-size: 43px; 
+    padding: 5px;
+    color: white;
+}
+.offer{
+    font-size:x-large;
+    font-style:oblique;
+    padding: 5px;
+    color: white;
+}
+.class{
+    font-size: x-large;
+    padding: 5px;
+    color: white;
+    
+}
+.classs{
+    font-size: x-large;
+    padding: 5px;
+    color: white;
+    
+}
+.fun{
+    font-size: x-large;
+    font-style: oblique;
+    padding: 5px;
+    color: white;
+}
+footer{
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    background-color: black;
+    color: white;
+    flex-direction: column;
+    padding-top: 20px;
+}
+footer li{
+    list-style: none;
+    justify-content: center;
+}
+footer li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: aliceblue;
+}
+@media(max-width: 480px ){
+    .nav-bar ul{
+        position: absolute;
+        display: flex;
+        gap: 60px;
+        flex-direction: column;
+        height: 100vmax;
+        background-color: rgba(255, 255, 255, 0.842);
+        color: rgb(0, 0, 0);
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    .nav-bar ul li a{
+        color: black;
+    }
+    .img{
+        display: block;
+    }
+    p{
+        font-size: x-large;
+        text-align: left;
+    }
+    .text-box{
+        width: 100%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        display: flex;
+        align-items: center ;
+        flex-direction: column;
+        background: url(5-free-admissions-resources.jpg);
+        background-size: cover;
+        opacity: 50%;
+    }
+    .area{
+        display: flex;
+        align-items: center ;
+        flex-direction: column;
+        padding: 5px;
+        color: white;
+    }
+    .namee{
+        font-size: larger;
+    }
+    .class{
+        font-size: larger;
+        text-align: center;
+    }
+    .nameee{
+        font-size: x-large;
+    }
+}
