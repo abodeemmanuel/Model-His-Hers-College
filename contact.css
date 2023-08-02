@@ -102,7 +102,7 @@ p{
     padding: 10px;
     margin-bottom: 50px;
 }
-@media(max-width: 480px ){
+@media(max-width: 780px ){
     .nav-bar ul{
         position: absolute;
         display: flex;

@@ -116,7 +116,7 @@ footer li a{
     text-decoration: none;
     color: aliceblue;
 }
-@media(max-width: 480px ){
+@media(max-width: 780px ){
     .nav-bar ul{
         position: absolute;
         display: flex;
@@ -159,6 +159,10 @@ footer li a{
         flex-direction: column;
         padding: 5px;
         color: white;
+        text-align: center;
+    }
+    address{
+        text-align: center;
     }
     .namee{
         font-size: larger;
@@ -169,5 +173,6 @@ footer li a{
     }
     .nameee{
         font-size: x-large;
+        text-align: center;
     }
 }

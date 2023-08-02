@@ -65,7 +65,7 @@ h1{
     color: white;
     font-family: arial;
 }
-@media(max-width: 480px ){
+@media(max-width: 780px ){
     .nav-bar ul{
         position: absolute;
         display: flex;
